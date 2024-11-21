@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Taọ phiếu</title>
+        <style>
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                margin: 50px;
+            }
+            table{
+                width: 100%;
+                background-color: rgb(165, 219, 194);
+                border-collapse: collapse;
+                margin: 1px;
+                border: 2px solid;
+            }
+            th{
+                border: 1px solid;
+                background-color: aliceblue;
+                padding: 2px;
+                font-size: large;
+            }
+            td{
+                border: 1px solid dimgray;
+                text-align: left;
+                width: 50%;
+            }
+            .gioitinh{
+                text-align: center;
+            }
+            .dongy{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th colspan="2" style="color: rgb(26, 75, 58);">Phiếu đăng kí tham gia chương trình khuyến mãi</th>
+            </tr>
+            <tr>
+                <td><label>Họ và tên</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Địa chỉ</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Điện thoại</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Phái</label></td>
+                <td class="gioitinh">
+                    <div>
+                        <label for="luachon1">Nam</label>
+                        <input type="radio" name="gioitinh" id="luachon1">
+                        <label for="luachon2">Nữ</label>
+                        <input type="radio" name="gioitinh" id="luachon2">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Nghề nghiệp</label></td>
+                <td >
+                    <div>
+                        <select name="nghenghiep" id="nghenghiep">
+                            <option value="Bacsi">Bác sĩ</option>
+                            <option value="Giaovien">Giáo viên</option>
+                            <option value="Luatsu">Luật sư</option>
+                            <option value="Congnhan">Công nhân</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Chọn sản phẩm tham gia</label></td>
+                <td>
+                    <div>
+                        <select name="sanpham" id="sanpham">
+                            <option value="kemdanhrang">Kem đánh răng</option>
+                            <option value="suaruamat">Sữa rửa mặt</option>
+                            <option value="dep">Dép</option>
+                            <option value="quanao">Quần áo </option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Số người dự đoán</label></td>
+                <td><input type="text" name="songuoi" id="songuoi"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="dongy"><button type="button">Đông ý</button></td>
+            </tr>
+        </table>
+    </body>
+</html>

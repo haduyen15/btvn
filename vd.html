@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phiếu Đăng Ký Tham Gia Chương Trình Khuyến Mãi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #000;
+        }
+        .form-container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+        .title {
+            text-align: center;
+            font-size: 24px;
+            color:aqua;
+            margin-bottom: 20px;
+        }
+        .form-row {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        .form-row label {
+            width: 200px;
+            font-weight: bold;
+        }
+        .form-row input, .form-row select {
+            flex: 1;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-row select {
+            background-color: #f9f9f9;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .submit-button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <div class="title">Phiếu Đăng Ký Tham Gia Chương Trình Khuyến Mãi</div>
+
+    <div class="form-row">
+        <label for="fullName">Họ và tên:</label>
+        <input type="text" id="fullName" name="fullName" required>
+    </div>
+
+    <div class="form-row">
+        <label for="address">Địa chỉ:</label>
+        <input type="text" id="address" name="address" required>
+    </div>
+
+    <div class="form-row">
+        <label for="phone">Điện thoại:</label>
+        <input type="tel" id="phone" name="phone" required>
+    </div>
+
+    <div class="form-row">
+        <label for="gender">Phái:</label>
+        <select id="gender" name="gender" required>
+            <option value="nam">Nam</option>
+            <option value="nu">Nữ</option>
+            <option value="khac">Khác</option>
+        </select>
+    </div>
+
+    <div class="form-row">
+        <label for="occupation">Nghề nghiệp:</label>
+        <input type="text" id="occupation" name="occupation" required>
+    </div>
+
+    <div class="form-row">
+        <label for="product">Chọn sản phẩm tham gia:</label>
+        <select id="product" name="product" required>
+            <option value="sp1">Sản phẩm 1</option>
+            <option value="sp2">Sản phẩm 2</option>
+            <option value="sp3">Sản phẩm 3</option>
+        </select>
+    </div>
+
+    <div class="form-row">
+        <label for="participants">Số người dự đoán:</label>
+        <input type="number" id="participants" name="participants" min="1" required>
+    </div>
+
+    <div class="form-row">
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">Đồng ý tham gia chương trình khuyến mãi</label>
+    </div>
+
+    <div class="button-container">
+        <button type="submit" class="submit-button">Đăng ký</button>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        Bang ten danh sach
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <p>thông tin cá nhân</p>
+        <table>
+            <tr>
+                <th>họ tên</th>
+                <th>năm sinh</th>
+                <th>quê quán</th>
+            </tr>
+            <tr>
+                <td>Đỗ Hà Duyên</td>
+                <td>2005</td>
+                <td>Nam Định</td>
+            </tr>
+        </table>
+        <h1>ảnh </h1>
+        <img src="IMG_2917.JPG" alt="ảnh " width="500" height="300">
+        <h2>đường link</h2>
+        <a href="dantri.com">dan tri</a>
+    </body>
+</html>
